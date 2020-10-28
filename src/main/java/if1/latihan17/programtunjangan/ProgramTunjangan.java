@@ -17,8 +17,8 @@ public class ProgramTunjangan {
     public static void main(String[] args) {
         // deklarasi variabel
         String status;
-        double tunjangan, gajiTotal;
-        int gajiPokok;
+        double tunjangan;
+        double gajiPokok, gajiTotal;
         
         // tampilkan output ke layar
         System.out.println("=========Program Tunjangan=========");
@@ -40,18 +40,20 @@ public class ProgramTunjangan {
                 gajiTotal = (gajiPokok + tunjangan);
                 // output hasil dari data yang dimasukkan user
                 System.out.println("=========Hasil Perhitungan Gaji Anda=========");
-                System.out.println("Gaji Pokok : " + gajiPokok);
-                System.out.println("Tunjangan  : " + tunjangan);
-                System.out.println("Total Gaji : " + gajiTotal);
+                System.out.println("Gaji Pokok : Rp." + gajiPokok);
+                System.out.println("Tunjangan  : Rp." + tunjangan);
+                System.out.println("Total Gaji : Rp." + gajiTotal);
+                System.out.println("(Developed by : Rachman Aldiansyah)");
                 break;
             case "Belum" :
                 tunjangan = (0);
                 gajiTotal = (gajiPokok + tunjangan);
                 // output hasil dari data yang dimasukkan user
                 System.out.println("=========Hasil Perhitungan Gaji Anda=========");
-                System.out.println("Gaji Pokok : " + gajiPokok);
-                System.out.println("Tunjangan  : " + tunjangan);
-                System.out.println("Total Gaji : " + gajiTotal);
+                System.out.println("Gaji Pokok : Rp." + gajiPokok);
+                System.out.println("Tunjangan  : Rp." + tunjangan);
+                System.out.println("Total Gaji : Rp." + gajiTotal);
+                System.out.println("(Developed by : Rachman Aldiansyah)");
                 break;
             default:
                 System.out.println("Isi Data Yang Benar!!");
