@@ -36,22 +36,22 @@ public class ProgramTunjangan {
         // operasi logika untuk menentukan status seorang pegawai
         switch(status) {
             case "Menikah" : 
-                tunjangan = (3.5 * gajiPokok);
+                tunjangan = (0.35 * gajiPokok);
                 gajiTotal = (gajiPokok * tunjangan);
                 // output hasil dari data yang dimasukkan user
                 System.out.println("=========Hasil Perhitungan Gaji Anda=========");
-                System.out.println("Gaji Pokok\t : " + gajiPokok);
-                System.out.println("Tunjangan\t  : " + tunjangan);
-                System.out.println("Total Gaji\t : " + gajiTotal);
+                System.out.println("Gaji Pokok : " + gajiPokok);
+                System.out.println("Tunjangan  : " + tunjangan);
+                System.out.println("Total Gaji : " + gajiTotal);
                 break;
             case "Belum" :
                 tunjangan = (0);
                 gajiTotal = (gajiPokok * tunjangan);
                 // output hasil dari data yang dimasukkan user
                 System.out.println("=========Hasil Perhitungan Gaji Anda=========");
-                System.out.println("Gaji Pokok\t : " + gajiPokok);
-                System.out.println("Tunjangan\t  : " + tunjangan);
-                System.out.println("Total Gaji\t : " + gajiTotal);
+                System.out.println("Gaji Pokok : " + gajiPokok);
+                System.out.println("Tunjangan  : " + tunjangan);
+                System.out.println("Total Gaji : " + gajiTotal);
                 break;
             default:
                 System.out.println("Isi Data Yang Benar!!");
