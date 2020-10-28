@@ -28,7 +28,7 @@ public class ProgramTunjangan {
         Scanner keyboard_1 = new Scanner(System.in);
         gajiPokok = keyboard_1.nextInt();
         
-        System.out.print("Status Anda? (Menikah/Belum) :");
+        System.out.print("Status Anda? (Menikah/Belum)     : ");
         // user memasukkan status seorang pegawai
         Scanner keyboard_2 = new Scanner(System.in);
         status = keyboard_2.nextLine();
@@ -37,7 +37,7 @@ public class ProgramTunjangan {
         switch(status) {
             case "Menikah" : 
                 tunjangan = (0.35 * gajiPokok);
-                gajiTotal = (gajiPokok * tunjangan);
+                gajiTotal = (gajiPokok + tunjangan);
                 // output hasil dari data yang dimasukkan user
                 System.out.println("=========Hasil Perhitungan Gaji Anda=========");
                 System.out.println("Gaji Pokok : " + gajiPokok);
@@ -46,7 +46,7 @@ public class ProgramTunjangan {
                 break;
             case "Belum" :
                 tunjangan = (0);
-                gajiTotal = (gajiPokok * tunjangan);
+                gajiTotal = (gajiPokok + tunjangan);
                 // output hasil dari data yang dimasukkan user
                 System.out.println("=========Hasil Perhitungan Gaji Anda=========");
                 System.out.println("Gaji Pokok : " + gajiPokok);
