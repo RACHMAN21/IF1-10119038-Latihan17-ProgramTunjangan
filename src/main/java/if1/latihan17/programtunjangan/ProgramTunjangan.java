@@ -20,15 +20,16 @@ public class ProgramTunjangan {
         double tunjangan;
         double gajiPokok, gajiTotal;
         
-        Scanner sc = new Scanner(System.in);
         // tampilkan output ke layar
         System.out.println("=========Program Tunjangan=========");
         // user memasukkan harga gajiPokok seorang pegawai;
-        System.out.println("Berapa gaji pokok anda perbulan? : Rp.");
-        gajiPokok = sc.nextInt();
+        System.out.print("Berapa gaji pokok anda perbulan? : Rp.");
+        Scanner sc_1 = new Scanner(System.in);
+        gajiPokok = sc_1.nextInt();
         // user memasukkan status seorang pegawai
-        System.out.println("Status Anda? (Menikah/Belum)     : ");
-        status = sc.nextLine();
+        System.out.print("Status Anda? (Menikah/Belum)     : ");
+        Scanner sc_2 = new Scanner(System.in);
+        status = sc_2.nextLine();
         
         // operasi logika untuk menentukan status seorang pegawai
         switch(status) {
